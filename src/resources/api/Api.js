@@ -40,5 +40,17 @@ export default {
         })
         const json = await req.json()
         return json
+    },
+    adicionarCarro: async (marca, modelo, ano, cor, descricao) => {
+        const req = await fetch(`${BASE_API}/usuarios/addcarros`, {
+            method: 'POST',
+            headers: {
+                Accept: 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ marca, modelo, ano, cor, descricao })
+        })
+        const json = await req.json()
+        return json
     }
 }

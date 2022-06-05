@@ -9,7 +9,7 @@ import PreLoad from '../views/PreLoad'
 import SignIn from '../views/SignIn/index'
 import SignUp from '../views/SignUp/index'
 import MidiasRecentes from '../views/MidiasRecentes'
-import Exercicios from '../views/Exercicios'
+import AdicionarCarros from '../views/AdicionarCarros'
 
 const Drawer = createDrawerNavigator();
 function CustomDrawerContent(props) {
@@ -35,7 +35,7 @@ export default function DrawerNavigator() {
                 <Drawer.Screen name="SignIn" component={SignIn} />
                 <Drawer.Screen name="SignUp" component={SignUp} />
                 <Drawer.Screen name="MidiasRecentes" component={MidiasRecentes} />
-                <Drawer.Screen name="Exercicios" component={Exercicios} />
+                <Drawer.Screen name="AdicionarCarros" component={AdicionarCarros} />
             </Drawer.Navigator>
         </NavigationContainer>
 

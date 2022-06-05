@@ -1,12 +1,11 @@
 import React from 'react'
 import { StyleSheet, View } from 'react-native';
-import Cadastro from './components/Cadastro/Cadastro.js';
-import  Entrar  from './components/Entrar/Entrar.js';
-
+import Navigation from './src/stack/Navigation'
+import DrawerNavigator from './src/stack/DrawerNavigator';
 export default function App() {
   return (
-    <View style={styles.container}>
-     <Cadastro></Cadastro>
+    <View>
+      <DrawerNavigator />
     </View>
   );
 }
